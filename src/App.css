@@ -142,7 +142,7 @@ button:disabled {
   background-color: #4285f4;
   border-radius: 2px;
   align-self: center;
-  width: 184px;
+  width: 50%;
   height: 42px;
   color: white;
   box-shadow: 0 3px 4px 0 rgba(0, 0, 0, 0.25);
@@ -165,8 +165,8 @@ button:disabled {
   height: 18px;
 }
 .btn-text {
-  float: right;
-  margin: 0px -11px 0 0;
+  float: center;
+  margin: 0px -11px 0 18px;
   color: white;
   font-size: 14px;
   letter-spacing: 0.2px;
@@ -247,5 +247,9 @@ img {
 
   input {
     width: 70%;
+  }
+
+  .btn-text {
+    margin: 0px -11px 0 28px;
   }
 }
