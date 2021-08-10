@@ -1,70 +1,101 @@
-# Getting Started with Create React App
+<h1 align="center">💬 FireChat 💬</h1>
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+<p align="center"> Made in React, constructed with create-react-app, utilizing Firebase & Firestore. </p>
+<p align="center">
+  <img alt="Version" src="https://img.shields.io/badge/version-0.1.0-blue.svg?cacheSeconds=2592000" />
+  <a href="#" target="_blank">
+    <img alt="License: MIT" src="https://img.shields.io/badge/License-MIT-yellow.svg" />
+  </a>
+  <a href="https://twitter.com/mrginolee" target="_blank">
+    <img alt="Twitter: mrginolee" src="https://img.shields.io/twitter/follow/mrginolee.svg?style=social" />
+  </a>
+</p>
 
-## Available Scripts
+<h2 align="center">🔥 <a href="https://react-firechat-b7d2c.web.app/">See Live</a> 🔥</h2>
 
-In the project directory, you can run:
+<!-- <p align="center">
+  <a href="https://ginoleeswan.github.io/weather-app-basic/">
+    <img src="./images/weather-app.gif" style="background: none;"  alt="animated" />
+  </a>
+</p> -->
 
-### `npm start`
+<h2 align="right">📖 &nbsp; Lessons Learned</h2>
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+<div align="right">
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+<!-- &nbsp; My second react project, after the mandatory to-do list!\
+&nbsp; The main focus here was to make **external API calls** to pull weather infomation from a third party site.
 
-### `npm test`
+&nbsp; I got more comfortable using **Hooks** rather than class based components.\
+&nbsp; It removes the hassle of binding to 'this' constantly. Using setState method with props makes **state management** simpler & elegant.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+&nbsp; I started off with a simple CSS layout then modified to a **flexbox** display with a left page and right page component.\
+&nbsp; The left page delivers the main information and the right contains the search bar & extra information.
 
-### `npm run build`
+&nbsp;This application tested my skills in adapting & optimizing a responsive web page to fit on **mobile screens**.\
+&nbsp; After a bit of tweaking I settled on a simple vertical mobile view design where the right page fits under the left like a stack of cards. -->
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+</div>
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## 🔮 &nbsp; Future Features
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+<!-- - 📅 &nbsp; 3-Day / Week view
+- 🌡️ &nbsp; Celsius to Fahrenheit converter
+- 🧭 &nbsp; Compass for wind direction
+- 🏙️ &nbsp; More dynamic backgrounds -->
 
-### `npm run eject`
+<h2 align="right">🚀 &nbsp; Deployment</h2>
+<div align="right">
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+Deployed with [Firebase](https://react-firechat-b7d2c.web.app/)
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+</div>
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+## 🔨 &nbsp; Get Started
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+From your command line, first clone this repo:
 
-## Learn More
+```sh
+# Clone this repository
+$ git clone https://github.com/ginoleeswan/chat-app-firebase
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+# Go into the repository
+$ cd chat-app-firebase
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+# Remove current origin repository
+$ git remote remove origin
+```
 
-### Code Splitting
+### Install
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+```sh
+npm install
+```
 
-### Analyzing the Bundle Size
+### Usage
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+```sh
+npm run start
+```
 
-### Making a Progressive Web App
+### Run tests
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+```sh
+npm run test
+```
 
-### Advanced Configuration
+<div align="right">
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+## ✍️ &nbsp; Author
 
-### Deployment
+👤 **Gino Swanepoel**
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+&nbsp; Twitter: [@mrginolee](https://twitter.com/mrginolee)\
+ &nbsp; Github: [@ginoleeswan](https://github.com/ginoleeswan)\
+ &nbsp; LinkedIn: [@ginoswanepoel](https://linkedin.com/in/ginoswanepoel)
 
-### `npm run build` fails to minify
+</div>
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## ❤️ &nbsp; Show your support
+
+Give a ⭐️ if this project helped you!
