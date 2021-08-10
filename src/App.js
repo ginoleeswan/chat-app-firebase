@@ -9,6 +9,8 @@ import "firebase/firestore";
 import "firebase/auth";
 import "firebase/analytics";
 
+import Div100vh from "react-div-100vh";
+
 import { useAuthState } from "react-firebase-hooks/auth";
 import { useCollectionData } from "react-firebase-hooks/firestore";
 import ChatRoom from "./components/ChatRoom";
@@ -33,35 +35,6 @@ function App() {
   const [user] = useAuthState(auth);
   const [initializing, setInitializing] = useState(true);
 
-  // const SignIn = () => {
-  //   const signInWithGoogle = async () => {
-  //     // retrieve Google provider object
-  //     const provider = new firebase.auth.GoogleAuthProvider();
-  //     // set language to default brower preference
-  //     auth.useDeviceLanguage();
-  //     // start sign in process
-  //     try {
-  //       await auth.signInWithPopup(provider);
-  //     } catch (error) {
-  //       console.error(error);
-  //     }
-  //   };
-
-  //   return (
-  //     <div className="sign-in" onClick={signInWithGoogle}>
-  //       <div class="google-icon-wrapper">
-  //         <img
-  //           class="google-icon"
-  //           src="https://upload.wikimedia.org/wikipedia/commons/5/53/Google_%22G%22_Logo.svg"
-  //         />
-  //       </div>
-  //       <p class="btn-text">
-  //         <b>Sign in with Google</b>
-  //       </p>
-  //     </div>
-  //   );
-  // };
-
   const SignOut = () => {
     return (
       auth.currentUser && (
@@ -72,108 +45,22 @@ function App() {
     );
   };
 
-  // function ChatRoom() {
-  //   const dummy = useRef();
-  //   const messagesRef = firestore.collection("messages");
-  //   const query = messagesRef.orderBy("createdAt").limit(25);
-
-  //   const [messages] = useCollectionData(query, { idField: "id" });
-
-  //   const [formValue, setFormValue] = useState("");
-
-  //   const sendMessage = async (e) => {
-  //     e.preventDefault();
-
-  //     const { uid, photoURL, displayName, email } = auth.currentUser;
-
-  //     if (formValue != "") {
-  //       await messagesRef.add({
-  //         text: formValue,
-  //         createdAt: firebase.firestore.FieldValue.serverTimestamp(),
-  //         uid,
-  //         photoURL,
-  //         displayName,
-  //         email,
-  //       });
-  //     }
-
-  //     setFormValue("");
-
-  //     dummy.current.scrollIntoView({ behaviour: "smooth" });
-  //   };
-
-  //   return (
-  //     <>
-  //       <main>
-  //         {messages &&
-  //           messages.map((msg) => <ChatMessage key={msg.id} message={msg} />)}
-
-  //         <div ref={dummy}></div>
-  //       </main>
-
-  //       <form onSubmit={sendMessage}>
-  //         <div className="app__form__container">
-  //           <input
-  //             value={formValue}
-  //             onChange={(e) => setFormValue(e.target.value)}
-  //             placeholder="Type a message..."
-  //           />
-  //           <button
-  //             className="send__button"
-  //             type="submit"
-  //             disabled={!formValue}
-  //           >
-  //             <FiSend className="send__button__icon" />
-  //           </button>
-  //         </div>
-  //       </form>
-  //     </>
-  //   );
-  // }
-
-  // function ChatMessage(props) {
-  //   const { text, uid, photoURL, createdAt, displayName } = props.message;
-
-  //   const time =
-  //     createdAt &&
-  //     createdAt
-  //       .toDate()
-  //       .toLocaleTimeString("en-US", { hour: "2-digit", minute: "2-digit" });
-
-  //   const messageClass = uid === auth.currentUser.uid ? "sent" : "received";
-
-  //   return (
-  //     <div className={`message ${messageClass}`}>
-  //       <img
-  //         src={
-  //           photoURL ||
-  //           "https://img.icons8.com/material-rounded/96/000000/user-male-circle.png"
-  //         }
-  //       />
-  //       <div>
-  //         <p>{text}</p>
-  //         <span>
-  //           {displayName} {time}
-  //         </span>
-  //       </div>
-  //     </div>
-  //   );
-  // }
-
   // if (initializing) return "Loading...";
 
   return (
-    <div className="App">
-      <header>
-        <h1 className="app__title">
-          FireChat
-          <IoChatbubbles className="app__logo" />
-        </h1>
+    <Div100vh>
+      <div className="App">
+        <header>
+          <h1 className="app__title">
+            FireChat
+            <IoChatbubbles className="app__logo" />
+          </h1>
 
-        <SignOut />
-      </header>
-      <section>{user ? <ChatRoom /> : <SignIn />}</section>
-    </div>
+          <SignOut />
+        </header>
+        <section>{user ? <ChatRoom /> : <SignIn />}</section>
+      </div>
+    </Div100vh>
   );
 }
 
