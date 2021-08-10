@@ -269,7 +269,8 @@ img {
   }
 
   input {
-    width: 50%;
+    width: 60%;
+    padding: 0 12px;
   }
 
   .btn-text {
