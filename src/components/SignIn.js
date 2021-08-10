@@ -32,15 +32,35 @@ const SignIn = () => {
     }
   };
 
+  const signInWithTwitter = async () => {
+    // retrieve Google provider object
+    const provider = new firebase.auth.TwitterAuthProvider();
+    // set language to default brower preference
+    auth.useDeviceLanguage();
+    // start sign in process
+    try {
+      await auth.signInWithPopup(provider);
+    } catch (error) {
+      console.error(error);
+    }
+  };
+
   return (
     <>
       <div className="login-with-google-btn" onClick={signInWithGoogle}>
         Sign in with Google
       </div>
+
       <br />
 
       <div className="login-with-facebook-btn" onClick={signInWithFacebook}>
         Sign in with Facebook
+      </div>
+
+      <br />
+
+      <div className="login-with-twitter-btn" onClick={signInWithTwitter}>
+        Sign in with Twitter
       </div>
     </>
   );
