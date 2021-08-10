@@ -1,7 +1,8 @@
 import React, { useRef, useState } from "react";
 import "./App.css";
 
-import { IoSend, IoChatbubbles } from "react-icons/io5";
+import { IoChatbubbles } from "react-icons/io5";
+import { FiSend } from "react-icons/fi";
 
 import firebase from "firebase/app";
 import "firebase/firestore";
@@ -106,14 +107,20 @@ function App() {
         </main>
 
         <form onSubmit={sendMessage}>
-          <input
-            value={formValue}
-            onChange={(e) => setFormValue(e.target.value)}
-            placeholder="Type a message"
-          />
-          <button className="send__button" type="submit" disabled={!formValue}>
-            <IoSend className="send__button__icon" />
-          </button>
+          <div className="app__form__container">
+            <input
+              value={formValue}
+              onChange={(e) => setFormValue(e.target.value)}
+              placeholder="Type a message..."
+            />
+            <button
+              className="send__button"
+              type="submit"
+              disabled={!formValue}
+            >
+              <FiSend className="send__button__icon" />
+            </button>
+          </div>
         </form>
       </>
     );
@@ -126,7 +133,12 @@ function App() {
 
     return (
       <div className={`message ${messageClass}`}>
-        <img src={photoURL} />
+        <img
+          src={
+            photoURL ||
+            "https://img.icons8.com/material-rounded/96/000000/user-male-circle.png"
+          }
+        />
         <p>{text}</p>
         {/* <p>{createdAt}</p> */}
       </div>
