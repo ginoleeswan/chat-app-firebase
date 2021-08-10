@@ -81,7 +81,7 @@ function App() {
     const sendMessage = async (e) => {
       e.preventDefault();
 
-      const { uid, photoURL } = auth.currentUser;
+      const { uid, photoURL, displayName, email } = auth.currentUser;
 
       if (formValue != "") {
         await messagesRef.add({
@@ -89,6 +89,8 @@ function App() {
           createdAt: firebase.firestore.FieldValue.serverTimestamp(),
           uid,
           photoURL,
+          displayName,
+          email,
         });
       }
 
@@ -127,11 +129,13 @@ function App() {
   }
 
   function ChatMessage(props) {
-    const { text, uid, photoURL, createdAt } = props.message;
+    const { text, uid, photoURL, createdAt, displayName } = props.message;
 
-    const time = createdAt
-      .toDate()
-      .toLocaleTimeString("en-US", { hour: "2-digit", minute: "2-digit" });
+    const time =
+      createdAt &&
+      createdAt
+        .toDate()
+        .toLocaleTimeString("en-US", { hour: "2-digit", minute: "2-digit" });
 
     const messageClass = uid === auth.currentUser.uid ? "sent" : "received";
 
@@ -145,7 +149,9 @@ function App() {
         />
         <div>
           <p>{text}</p>
-          <span>{time}</span>
+          <span>
+            {displayName} {time}
+          </span>
         </div>
       </div>
     );
