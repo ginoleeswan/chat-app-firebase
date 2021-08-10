@@ -250,6 +250,53 @@ button:disabled {
   cursor: not-allowed;
 }
 
+.login-with-twitter-btn {
+  transition: background-color 0.3s, box-shadow 0.3s;
+
+  padding: 12px 16px 12px 42px;
+  width: 50%;
+  align-self: center;
+  border: none;
+  border-radius: 3px;
+  box-shadow: 0 -1px 0 rgba(0, 0, 0, 0.04), 0 1px 1px rgba(0, 0, 0, 0.25);
+
+  color: white;
+  font-size: 14px;
+  font-weight: 500;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+
+  background-image: url(https://img.icons8.com/ios-filled/100/ffffff/twitter-circled--v1.png);
+  background-size: 28px;
+  background-position: center;
+
+  background-color: #1da1f2;
+  background-repeat: no-repeat;
+  background-position: 9px 7px;
+}
+
+.login-with-twitter-btn:hover {
+  box-shadow: 0 -1px 0 rgba(0, 0, 0, 0.04), 0 2px 4px rgba(0, 0, 0, 0.25);
+}
+
+.login-with-twitter-btn:active {
+  background-color: #eeeeee;
+  color: #757575;
+}
+
+.login-with-twitter-btn:focus {
+  outline: none;
+  box-shadow: 0 -1px 0 rgba(0, 0, 0, 0.04), 0 2px 4px rgba(0, 0, 0, 0.25),
+    0 0 0 3px #c8dafc;
+}
+
+.login-with-facebook-btn:disabled {
+  filter: grayscale(100%);
+  background-color: #ebebeb;
+  box-shadow: 0 -1px 0 rgba(0, 0, 0, 0.04), 0 1px 1px rgba(0, 0, 0, 0.25);
+  cursor: not-allowed;
+}
+
 .sign-in {
   background-color: #4285f4;
   border-radius: 2px;
