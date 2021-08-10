@@ -19,18 +19,30 @@ const SignIn = () => {
     }
   };
 
+  const signInWithFacebook = async () => {
+    // retrieve Google provider object
+    const provider = new firebase.auth.FacebookAuthProvider();
+    // set language to default brower preference
+    auth.useDeviceLanguage();
+    // start sign in process
+    try {
+      await auth.signInWithPopup(provider);
+    } catch (error) {
+      console.error(error);
+    }
+  };
+
   return (
-    <div className="sign-in" onClick={signInWithGoogle}>
-      <div class="google-icon-wrapper">
-        <img
-          class="google-icon"
-          src="https://upload.wikimedia.org/wikipedia/commons/5/53/Google_%22G%22_Logo.svg"
-        />
+    <>
+      <div className="login-with-google-btn" onClick={signInWithGoogle}>
+        Sign in with Google
       </div>
-      <p class="btn-text">
-        <b>Sign in with Google</b>
-      </p>
-    </div>
+      <br />
+
+      <div className="login-with-facebook-btn" onClick={signInWithFacebook}>
+        Sign in with Facebook
+      </div>
+    </>
   );
 };
 
