@@ -129,6 +129,10 @@ function App() {
   function ChatMessage(props) {
     const { text, uid, photoURL, createdAt } = props.message;
 
+    const time = createdAt
+      .toDate()
+      .toLocaleTimeString("en-US", { hour: "2-digit", minute: "2-digit" });
+
     const messageClass = uid === auth.currentUser.uid ? "sent" : "received";
 
     return (
@@ -139,8 +143,10 @@ function App() {
             "https://img.icons8.com/material-rounded/96/000000/user-male-circle.png"
           }
         />
-        <p>{text}</p>
-        {/* <p>{createdAt}</p> */}
+        <div>
+          <p>{text}</p>
+          <span>{time}</span>
+        </div>
       </div>
     );
   }
