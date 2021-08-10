@@ -1,0 +1,131 @@
+[debug] [2021-08-10T19:22:16.307Z] ----------------------------------------------------------------------
+[debug] [2021-08-10T19:22:16.309Z] Command:       /usr/local/bin/node /usr/local/bin/firebase deploy
+[debug] [2021-08-10T19:22:16.309Z] CLI Version:   9.16.0
+[debug] [2021-08-10T19:22:16.309Z] Platform:      darwin
+[debug] [2021-08-10T19:22:16.309Z] Node Version:  v14.5.0
+[debug] [2021-08-10T19:22:16.311Z] Time:          Tue Aug 10 2021 21:22:16 GMT+0200 (South Africa Standard Time)
+[debug] [2021-08-10T19:22:16.311Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2021-08-10T19:22:16.563Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2021-08-10T19:22:16.564Z] > authorizing via signed-in user (ginoleemusic@gmail.com)
+[debug] [2021-08-10T19:22:16.564Z] [iam] checking project react-firechat-b7d2c for permissions ["datastore.indexes.create","datastore.indexes.delete","datastore.indexes.list","datastore.indexes.update","firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2021-08-10T19:22:16.566Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/react-firechat-b7d2c:testIamPermissions  
+ {"permissions":["datastore.indexes.create","datastore.indexes.delete","datastore.indexes.list","datastore.indexes.update","firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2021-08-10T19:22:18.593Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Tue, 10 Aug 2021 19:22:19 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","server-timing":"gfet4t7; dur=1498","alt-svc":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-08-10T19:22:18.596Z] > refreshing access token with scopes: []
+[debug] [2021-08-10T19:22:18.596Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2021-08-10T19:22:19.338Z] <<< HTTP RESPONSE 200 {"pragma":"no-cache","cache-control":"no-cache, no-store, max-age=0, must-revalidate","expires":"Mon, 01 Jan 1990 00:00:00 GMT","date":"Tue, 10 Aug 2021 19:22:20 GMT","content-type":"application/json; charset=utf-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","server":"scaffolding on HTTPServer2","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-08-10T19:22:19.372Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/react-firechat-b7d2c [none]
+[debug] [2021-08-10T19:22:20.020Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/react-firechat-b7d2c 200
+[debug] [2021-08-10T19:22:20.020Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/react-firechat-b7d2c {"projectId":"react-firechat-b7d2c","projectNumber":"944328206553","displayName":"react-firechat","name":"projects/react-firechat-b7d2c","resources":{"hostingSite":"react-firechat-b7d2c","storageBucket":"react-firechat-b7d2c.appspot.com","locationId":"europe-west"},"state":"ACTIVE"}
+[info] 
+[info] === Deploying to 'react-firechat-b7d2c'...
+[info] 
+[info] i  deploying firestore, hosting 
+[info] i  firestore: reading indexes from firestore.indexes.json... 
+[info] i  cloud.firestore: checking firestore.rules for compilation errors... 
+[debug] [2021-08-10T19:22:20.025Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
+[debug] [2021-08-10T19:22:20.025Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2021-08-10T19:22:20.542Z] <<< HTTP RESPONSE 200 {"cache-control":"no-cache, no-store, max-age=0, must-revalidate","pragma":"no-cache","date":"Tue, 10 Aug 2021 19:22:21 GMT","expires":"Mon, 01 Jan 1990 00:00:00 GMT","content-type":"application/json; charset=utf-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","server":"scaffolding on HTTPServer2","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-08-10T19:22:20.720Z] >>> HTTP REQUEST POST https://firebaserules.googleapis.com/v1/projects/react-firechat-b7d2c:test  
+ {"source":{"files":[{"name":"firestore.rules","content":"rules_version = '2';\nservice cloud.firestore {\n  match /databases/{database}/documents {\n  \n    match /{document=**} {\n      allow read, write: if false;\n    }\n    \n    match /messages/{docID} {\n    \tallow read: if request.auth.uid != null;\n      allow create: if canCreateMessage();\n    }\n    \n    function canCreateMessage() {\n    \tlet isSignedIn = request.auth.uid != null;\n      let isOwner = request.auth.uid == request.resource.data.uid;\n      \n      // let isNotBanned = exists(\n      // /databases/$(database)/documents/banned/$(request.auth.uid)\n      // ) == false;\n      \n      return isSignedIn && isOwner;\n    }\n  }\n}"}]}}
+[debug] [2021-08-10T19:22:22.037Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Tue, 10 Aug 2021 19:22:23 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[info] ✔  cloud.firestore: rules file firestore.rules compiled successfully 
+[debug] [2021-08-10T19:22:22.040Z] >>> HTTP REQUEST POST https://firebasehosting.googleapis.com/v1beta1/sites/react-firechat-b7d2c/versions  
+ {"config":{"rewrites":[{"glob":"**","path":"/index.html"}]},"labels":{"deployment-tool":"cli-firebase"}}
+[debug] [2021-08-10T19:22:24.870Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Tue, 10 Aug 2021 19:22:25 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-08-10T19:22:24.873Z] >>> HTTP REQUEST GET https://firebaserules.googleapis.com/v1/projects/react-firechat-b7d2c/releases?pageSize=10&pageToken=  
+ 
+[debug] [2021-08-10T19:22:24.873Z] >>> HTTP REQUEST GET https://firestore.googleapis.com/v1/projects/react-firechat-b7d2c/databases/(default)/collectionGroups/-/indexes  
+ 
+[debug] [2021-08-10T19:22:25.997Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Tue, 10 Aug 2021 19:22:27 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-08-10T19:22:25.998Z] >>> HTTP REQUEST GET https://firebaserules.googleapis.com/v1/projects/react-firechat-b7d2c/rulesets/3d52a109-52b5-4d43-ab67-34f8f87dcbb5  
+ 
+[debug] [2021-08-10T19:22:26.471Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Tue, 10 Aug 2021 19:22:27 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-08-10T19:22:26.475Z] >>> HTTP REQUEST GET https://firestore.googleapis.com/v1/projects/react-firechat-b7d2c/databases/(default)/collectionGroups/-/fields?filter=indexConfig.usesAncestorConfig=false  
+ 
+[debug] [2021-08-10T19:22:27.120Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Tue, 10 Aug 2021 19:22:28 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[info] i  firestore: latest version of firestore.rules already up to date, skipping upload... 
+[debug] [2021-08-10T19:22:27.841Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Tue, 10 Aug 2021 19:22:28 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[info] ✔  firestore: deployed indexes in firestore.indexes.json successfully 
+[info] i  hosting[react-firechat-b7d2c]: beginning deploy... 
+[info] i  hosting[react-firechat-b7d2c]: found 12 files in build 
+[debug] [2021-08-10T19:22:29.259Z] > refreshing access token with scopes: []
+[debug] [2021-08-10T19:22:29.259Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2021-08-10T19:22:29.261Z] [hosting] hash cache [YnVpbGQ] stored for 12 files
+[debug] [2021-08-10T19:22:29.261Z] [hosting][hash queue][FINAL] {"max":1406,"min":8,"avg":144,"active":0,"complete":12,"success":12,"errored":0,"retried":0,"total":12,"elapsed":1410}
+[debug] [2021-08-10T19:22:29.740Z] <<< HTTP RESPONSE 200 {"cache-control":"no-cache, no-store, max-age=0, must-revalidate","pragma":"no-cache","date":"Tue, 10 Aug 2021 19:22:30 GMT","expires":"Mon, 01 Jan 1990 00:00:00 GMT","content-type":"application/json; charset=utf-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","server":"scaffolding on HTTPServer2","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-08-10T19:22:29.759Z] >>> [apiv2][query] POST https://firebasehosting.googleapis.com/v1beta1/sites/react-firechat-b7d2c/versions/deb81dde29e22eec:populateFiles [none]
+[debug] [2021-08-10T19:22:29.759Z] >>> [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/sites/react-firechat-b7d2c/versions/deb81dde29e22eec:populateFiles {"files":{"/index.html":"2a62ef8a94fa6d9c1c48d8fe153fc492607dfe99a70f6f5e490db2b5585def94","/asset-manifest.json":"f053be19926b86bc144daa4ff53fa45ef5c9745a45174381b7825a0d662dcd39","/gl-logo.ico":"975bcd0fc07e80b9567d8bc43bea970f4f7e341759e3ac0793e5f0c729a2f51e","/static/css/main.5836a7bf.chunk.css":"ea6ffcca73eb016b9ad836bbcb8d0193eb1760678ede6965f0bed5652d9e74d1","/static/js/2.a39ff119.chunk.js.LICENSE.txt":"879c6f8f6bed8b5deec512b371ee92a908a9803acd4d4891cf7aab360eaa9bcb","/static/js/main.9ec33607.chunk.js":"fa0ddf0251ad5c007a4cce2871aa3b560cbc507198cbf35b283e6c75146b902a","/static/js/main.9ec33607.chunk.js.map":"f164097c35d854988cab89d5ec17470a97ebeb52b5569b09b46271dc5b7e60d6","/static/js/runtime-main.847262dd.js":"9e58da540d2b5edc3f9f0b268e29047337b5206aa72d3a82bc882275fb038e0b","/static/js/runtime-main.847262dd.js.map":"ab95b1e775439809e4ea30ce3969b007c5f4daeb688917de5d36b17359376018","/static/css/main.5836a7bf.chunk.css.map":"d20c744360384da43823a5cad3c6cd352765a1e83cfc025fe45c45775463719f","/static/js/2.a39ff119.chunk.js":"6e0932785e98c6039579ead95236c5e5d9b2dfc00373902cecda5bac72f9afcf","/static/js/2.a39ff119.chunk.js.map":"393123936faebe7050f9a9c7d17a78fd23e5bb610b1878649e1cc709fe088daf"}}
+[debug] [2021-08-10T19:22:32.003Z] <<< [apiv2][status] POST https://firebasehosting.googleapis.com/v1beta1/sites/react-firechat-b7d2c/versions/deb81dde29e22eec:populateFiles 200
+[debug] [2021-08-10T19:22:32.003Z] <<< [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/sites/react-firechat-b7d2c/versions/deb81dde29e22eec:populateFiles {"uploadRequiredHashes":["f053be19926b86bc144daa4ff53fa45ef5c9745a45174381b7825a0d662dcd39","975bcd0fc07e80b9567d8bc43bea970f4f7e341759e3ac0793e5f0c729a2f51e","d20c744360384da43823a5cad3c6cd352765a1e83cfc025fe45c45775463719f","2a62ef8a94fa6d9c1c48d8fe153fc492607dfe99a70f6f5e490db2b5585def94","ea6ffcca73eb016b9ad836bbcb8d0193eb1760678ede6965f0bed5652d9e74d1","fa0ddf0251ad5c007a4cce2871aa3b560cbc507198cbf35b283e6c75146b902a","f164097c35d854988cab89d5ec17470a97ebeb52b5569b09b46271dc5b7e60d6"],"uploadUrl":"https://upload-firebasehosting.googleapis.com/upload/sites/react-firechat-b7d2c/versions/deb81dde29e22eec/files"}
+[debug] [2021-08-10T19:22:32.005Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/react-firechat-b7d2c/versions/deb81dde29e22eec/files/f053be19926b86bc144daa4ff53fa45ef5c9745a45174381b7825a0d662dcd39 [none]
+[debug] [2021-08-10T19:22:32.005Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/react-firechat-b7d2c/versions/deb81dde29e22eec/files/f053be19926b86bc144daa4ff53fa45ef5c9745a45174381b7825a0d662dcd39 [stream]
+[debug] [2021-08-10T19:22:32.006Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/react-firechat-b7d2c/versions/deb81dde29e22eec/files/975bcd0fc07e80b9567d8bc43bea970f4f7e341759e3ac0793e5f0c729a2f51e [none]
+[debug] [2021-08-10T19:22:32.006Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/react-firechat-b7d2c/versions/deb81dde29e22eec/files/975bcd0fc07e80b9567d8bc43bea970f4f7e341759e3ac0793e5f0c729a2f51e [stream]
+[debug] [2021-08-10T19:22:32.007Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/react-firechat-b7d2c/versions/deb81dde29e22eec/files/d20c744360384da43823a5cad3c6cd352765a1e83cfc025fe45c45775463719f [none]
+[debug] [2021-08-10T19:22:32.007Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/react-firechat-b7d2c/versions/deb81dde29e22eec/files/d20c744360384da43823a5cad3c6cd352765a1e83cfc025fe45c45775463719f [stream]
+[debug] [2021-08-10T19:22:32.008Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/react-firechat-b7d2c/versions/deb81dde29e22eec/files/2a62ef8a94fa6d9c1c48d8fe153fc492607dfe99a70f6f5e490db2b5585def94 [none]
+[debug] [2021-08-10T19:22:32.008Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/react-firechat-b7d2c/versions/deb81dde29e22eec/files/2a62ef8a94fa6d9c1c48d8fe153fc492607dfe99a70f6f5e490db2b5585def94 [stream]
+[debug] [2021-08-10T19:22:32.009Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/react-firechat-b7d2c/versions/deb81dde29e22eec/files/ea6ffcca73eb016b9ad836bbcb8d0193eb1760678ede6965f0bed5652d9e74d1 [none]
+[debug] [2021-08-10T19:22:32.009Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/react-firechat-b7d2c/versions/deb81dde29e22eec/files/ea6ffcca73eb016b9ad836bbcb8d0193eb1760678ede6965f0bed5652d9e74d1 [stream]
+[debug] [2021-08-10T19:22:32.009Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/react-firechat-b7d2c/versions/deb81dde29e22eec/files/fa0ddf0251ad5c007a4cce2871aa3b560cbc507198cbf35b283e6c75146b902a [none]
+[debug] [2021-08-10T19:22:32.009Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/react-firechat-b7d2c/versions/deb81dde29e22eec/files/fa0ddf0251ad5c007a4cce2871aa3b560cbc507198cbf35b283e6c75146b902a [stream]
+[debug] [2021-08-10T19:22:32.010Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/react-firechat-b7d2c/versions/deb81dde29e22eec/files/f164097c35d854988cab89d5ec17470a97ebeb52b5569b09b46271dc5b7e60d6 [none]
+[debug] [2021-08-10T19:22:32.010Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/react-firechat-b7d2c/versions/deb81dde29e22eec/files/f164097c35d854988cab89d5ec17470a97ebeb52b5569b09b46271dc5b7e60d6 [stream]
+[debug] [2021-08-10T19:22:32.010Z] [hosting][populate queue][FINAL] {"max":2746,"min":2746,"avg":2746,"active":0,"complete":1,"success":1,"errored":0,"retried":0,"total":1,"elapsed":2751}
+[debug] [2021-08-10T19:22:32.011Z] [hosting] uploads queued: 7
+[debug] [2021-08-10T19:22:33.966Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/react-firechat-b7d2c/versions/deb81dde29e22eec/files/ea6ffcca73eb016b9ad836bbcb8d0193eb1760678ede6965f0bed5652d9e74d1 200
+[debug] [2021-08-10T19:22:33.966Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/react-firechat-b7d2c/versions/deb81dde29e22eec/files/ea6ffcca73eb016b9ad836bbcb8d0193eb1760678ede6965f0bed5652d9e74d1 [stream]
+[debug] [2021-08-10T19:22:33.980Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/react-firechat-b7d2c/versions/deb81dde29e22eec/files/d20c744360384da43823a5cad3c6cd352765a1e83cfc025fe45c45775463719f 200
+[debug] [2021-08-10T19:22:33.980Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/react-firechat-b7d2c/versions/deb81dde29e22eec/files/d20c744360384da43823a5cad3c6cd352765a1e83cfc025fe45c45775463719f [stream]
+[debug] [2021-08-10T19:22:34.169Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/react-firechat-b7d2c/versions/deb81dde29e22eec/files/fa0ddf0251ad5c007a4cce2871aa3b560cbc507198cbf35b283e6c75146b902a 200
+[debug] [2021-08-10T19:22:34.169Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/react-firechat-b7d2c/versions/deb81dde29e22eec/files/fa0ddf0251ad5c007a4cce2871aa3b560cbc507198cbf35b283e6c75146b902a [stream]
+[debug] [2021-08-10T19:22:34.291Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/react-firechat-b7d2c/versions/deb81dde29e22eec/files/f164097c35d854988cab89d5ec17470a97ebeb52b5569b09b46271dc5b7e60d6 200
+[debug] [2021-08-10T19:22:34.291Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/react-firechat-b7d2c/versions/deb81dde29e22eec/files/f164097c35d854988cab89d5ec17470a97ebeb52b5569b09b46271dc5b7e60d6 [stream]
+[debug] [2021-08-10T19:22:34.379Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/react-firechat-b7d2c/versions/deb81dde29e22eec/files/2a62ef8a94fa6d9c1c48d8fe153fc492607dfe99a70f6f5e490db2b5585def94 200
+[debug] [2021-08-10T19:22:34.380Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/react-firechat-b7d2c/versions/deb81dde29e22eec/files/2a62ef8a94fa6d9c1c48d8fe153fc492607dfe99a70f6f5e490db2b5585def94 [stream]
+[debug] [2021-08-10T19:22:34.502Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/react-firechat-b7d2c/versions/deb81dde29e22eec/files/f053be19926b86bc144daa4ff53fa45ef5c9745a45174381b7825a0d662dcd39 200
+[debug] [2021-08-10T19:22:34.502Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/react-firechat-b7d2c/versions/deb81dde29e22eec/files/f053be19926b86bc144daa4ff53fa45ef5c9745a45174381b7825a0d662dcd39 [stream]
+[debug] [2021-08-10T19:22:34.716Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/react-firechat-b7d2c/versions/deb81dde29e22eec/files/975bcd0fc07e80b9567d8bc43bea970f4f7e341759e3ac0793e5f0c729a2f51e 200
+[debug] [2021-08-10T19:22:34.716Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/react-firechat-b7d2c/versions/deb81dde29e22eec/files/975bcd0fc07e80b9567d8bc43bea970f4f7e341759e3ac0793e5f0c729a2f51e [stream]
+[debug] [2021-08-10T19:22:34.716Z] [hosting][upload queue][FINAL] {"max":2712,"min":1961,"avg":2282,"active":0,"complete":7,"success":7,"errored":0,"retried":0,"total":7,"elapsed":2713}
+[info] ✔  hosting[react-firechat-b7d2c]: file upload complete 
+[debug] [2021-08-10T19:22:34.717Z] [hosting] deploy completed after 6874ms
+[debug] [2021-08-10T19:22:34.719Z] [rules] releasing cloud.firestore with ruleset projects/react-firechat-b7d2c/rulesets/3d52a109-52b5-4d43-ab67-34f8f87dcbb5
+[debug] [2021-08-10T19:22:34.719Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
+[debug] [2021-08-10T19:22:34.720Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2021-08-10T19:22:35.210Z] <<< HTTP RESPONSE 200 {"expires":"Mon, 01 Jan 1990 00:00:00 GMT","date":"Tue, 10 Aug 2021 19:22:36 GMT","cache-control":"no-cache, no-store, max-age=0, must-revalidate","pragma":"no-cache","content-type":"application/json; charset=utf-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","server":"scaffolding on HTTPServer2","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-08-10T19:22:35.235Z] >>> HTTP REQUEST PATCH https://firebaserules.googleapis.com/v1/projects/react-firechat-b7d2c/releases/cloud.firestore  
+ {"release":{"name":"projects/react-firechat-b7d2c/releases/cloud.firestore","rulesetName":"projects/react-firechat-b7d2c/rulesets/3d52a109-52b5-4d43-ab67-34f8f87dcbb5"}}
+[debug] [2021-08-10T19:22:36.488Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Tue, 10 Aug 2021 19:22:37 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-08-10T19:22:36.488Z] [rules] updated release projects/react-firechat-b7d2c/releases/cloud.firestore
+[info] ✔  firestore: released rules firestore.rules to cloud.firestore 
+[debug] [2021-08-10T19:22:36.489Z] [
+  {
+    "config": {
+      "public": "build",
+      "ignore": [
+        "firebase.json",
+        "**/.*",
+        "**/node_modules/**"
+      ],
+      "rewrites": [
+        {
+          "source": "**",
+          "destination": "/index.html"
+        }
+      ],
+      "site": "react-firechat-b7d2c"
+    },
+    "site": "react-firechat-b7d2c",
+    "version": "sites/react-firechat-b7d2c/versions/deb81dde29e22eec"
+  }
+]
+[info] i  hosting[react-firechat-b7d2c]: finalizing version... 
+[debug] [2021-08-10T19:22:36.491Z] >>> HTTP REQUEST PATCH https://firebasehosting.googleapis.com/v1beta1/sites/react-firechat-b7d2c/versions/deb81dde29e22eec?updateMask=status  
+ {"status":"FINALIZED"}
