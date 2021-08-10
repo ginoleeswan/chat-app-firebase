@@ -78,6 +78,7 @@ form {
   background: linear-gradient(
     to bottom,
     rgba(235, 237, 240, 0),
+    rgba(235, 237, 240, 1),
     rgba(235, 237, 240, 1)
   );
   /* max-width: 728px; */
