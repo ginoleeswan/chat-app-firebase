@@ -51,10 +51,14 @@ function App() {
     <Div100vh>
       <div className="App">
         <header>
-          <h1 className="app__title">
-            FireChat
-            <IoChatbubbles className="app__logo" />
-          </h1>
+          <div className="app_title_container">
+            <h1 className="app__title">
+              FireChat
+              <IoChatbubbles className="app__logo" />
+            </h1>
+
+            <div className="app__info"> by Gino Swanepoel </div>
+          </div>
 
           <SignOut />
         </header>
