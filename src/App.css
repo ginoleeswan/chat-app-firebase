@@ -57,7 +57,7 @@ main {
   flex-direction: column;
 }
 
-main::-webkit-scrollbar {
+/* main::-webkit-scrollbar {
   width: 0.25rem;
 }
 
@@ -67,7 +67,7 @@ main::-webkit-scrollbar-track {
 
 main::-webkit-scrollbar-thumb {
   background: #6649b8;
-}
+} */
 
 form {
   height: 15vh;
@@ -215,7 +215,7 @@ li {
 
 p {
   max-width: 500px;
-
+  margin: 16px 0 6px 0;
   line-height: 24px;
   padding: 10px 20px;
 
@@ -227,6 +227,21 @@ p {
 .message {
   display: flex;
   align-items: center;
+}
+
+.message span {
+  font-size: 8px;
+  /* float: right; */
+  margin: 0;
+  padding: 0;
+}
+
+.received span {
+  float: left;
+}
+
+.sent span {
+  float: right;
 }
 
 .sent {
@@ -272,6 +287,9 @@ img {
   input {
     width: 60%;
     padding: 0 12px;
+  }
+  p {
+    max-width: 200px;
   }
 
   .btn-text {
