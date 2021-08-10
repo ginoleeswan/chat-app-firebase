@@ -254,15 +254,18 @@ img {
 }
 
 @media screen and (max-width: 480px) {
+  main {
+    padding: 20px 0;
+  }
   .signout__btn {
     font-size: 0.8rem;
   }
   .app__form__container {
-    height: 90px;
+    height: 80px;
   }
   .send__button {
-    width: 70px;
-    height: 70px;
+    width: 60px;
+    height: 60px;
   }
 
   input {
