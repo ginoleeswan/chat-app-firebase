@@ -80,7 +80,7 @@ form {
 }
 
 .app__form__container {
-  height: 90px;
+  height: 95px;
   width: 90%;
   text-align: center;
   background-color: white;
@@ -101,7 +101,7 @@ input {
   background: transparent;
   outline: none;
   border: none;
-  padding: 0 20px;
+  padding: 0 15px;
   border-radius: 30px;
   margin: 20px 20px;
 }
@@ -118,9 +118,9 @@ input {
   cursor: pointer;
   font-size: 1.25rem;
   border-radius: 50%;
-  margin: 10px 10px 10px 0;
-  width: 70px;
-  height: 70px;
+  margin: 15px 15px 15px 0;
+  width: 65px;
+  height: 65px;
   /* height: 65px; */
 
   background-color: rgb(235, 237, 240);
@@ -266,6 +266,7 @@ img {
   .send__button {
     width: 60px;
     height: 60px;
+    margin: 10px 15px 10px 0;
   }
 
   input {
